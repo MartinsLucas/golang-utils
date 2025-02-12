@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"https://github.com/MartinsLucas/golang-utils/src/util"
+
+	"github.com/MartinsLucas/golang-utils/src/util/src/util"
 )
 
 func main() {
