@@ -1,9 +1,9 @@
-package util
+package io
 
 import (
+	"bufio"
 	"fmt"
 	"os"
-	"bufio"
 )
 
 func ReadChar() (rune, error) {
@@ -18,12 +18,12 @@ func ReadChar() (rune, error) {
 }
 
 func ReadLine() (string, error) {
-  scanner := bufio.NewScanner(os.Stdin)
-  scanner.Scan()
-  err := scanner.Err()
-  if err != nil {
-    return "", err
-  }
-  
-  return scanner.Text(), nil
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	err := scanner.Err()
+	if err != nil {
+		return "", err
+	}
+
+	return scanner.Text(), nil
 }
